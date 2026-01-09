@@ -182,8 +182,6 @@ footer{
   box-shadow: 5px 0 25px var(--box-sd-color);
 }
 .experience-indent{
-  text-indent: 2rem;
-  list-style: none;
   line-height: 35px;
 }
 #experience h2{
@@ -206,8 +204,14 @@ footer{
   border: 1px solid var(--border-color-black);
   border-radius: 10px;
 }
+.about-text{
+  text-align: justify;
+}
 @media (max-width: 768px){
-  .experience-indent li{
-  text-wrap: wrap;
+.experience-indent li{
+  word-break: break-all;
+}
+.experience-indent{
+  text-indent: none;
 }
 }
