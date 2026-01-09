@@ -1,3 +1,19 @@
+:root{
+  --btn-color-black: #111;
+  --bg-color-black: #111;
+  --bg-color-skill: #333;
+  --bg-color-white: #fff;
+  --bg-color-design1: #f4f4f4;
+  --bg-color-design2: #f9f9f9;
+  --hover-color-white: #fff;
+  --text-color-white: #fff;
+  --text-color-black: #111;
+  --border-color-black: #111;
+  --border-color-white: #fff;
+  --border-color-red: #f50808;
+  --border-color-card: #ddd;
+  --box-sd-color: rgb(46, 30, 30);
+}
 *{
   margin: 0;
   padding: 0;
@@ -14,7 +30,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background: var(--bg-color-black);
   padding: 15px 40px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -24,29 +40,30 @@ header{
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  color: #fff;
+  color: var(--text-color-white);
 }
 .logo img{
   max-width: 100px;
   height: auto;
   border-radius: 100%;
+  border: 3px solid var(--border-color-red)
 }
 .logo-text{
   display: grid;
   grid-template-columns: 1fr;
 }
 .logo-text h2{
-  color: white;
+  color: var(--text-color-white);
   font-size: 2rem;
 }
 .logo-text p{
-  color: white;
+  color: var(--text-color-white);
   font-size: .8rem;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .hero h3{
-  font-size: 1cqi;
+  font-size: 1rem;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -63,29 +80,29 @@ header{
   margin: 5px;
 }
 .nav-links a{
-  color: #fff;
+  color: var(--text-color-white);
   text-decoration: none;
-  border: 1.3px solid #fff;
+  border: 1.3px solid var(--border-color-white);
   padding: 15px;
   border-radius: 10px;
 }
 .nav-links a:hover{
-  color: #111;
+  color: var(--text-color-black);
   text-decoration: none;
   padding: 15px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--bg-color-white);
 }
 .hero{
   padding: 80px 40px;
   text-align: center;
-  background: #f4f4f4;
+  background: var(--bg-color-design1);
 }
 .section{
   padding: 60px 40px;
 }
 .bg-light{
-  background: #f9f9f9;
+  background: var(--bg-color-design2);
 }
 .skills-list{
   display: flex;
@@ -93,24 +110,24 @@ header{
   gap: 15px;
 }
 .skills-list li{
-  background: #222;
-  color: #fff;
+  background: var(--bg-color-skill);
+  color: var(--text-color-white);
   padding: 10px 15px;
   border-radius: 5px;
   list-style: none;
 }
 .project-card{
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color-card);
   padding: 20px;
   margin-bottom: 20px;
-  background: #f4f4f4;
+  background: var(--bg-color-design1);
 }
 .btn{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #111;
-  color: #fff;
+  background: var(--bg-color-black);
+  color: var(--text-color-white);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -120,10 +137,10 @@ header{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #fff;
-  color: #111;
+  background: var(--bg-color-white);
+  color: var(--text-color-black);
   text-decoration: none;
-  border: 1.5px solid #111;
+  border: 1.5px solid var(--border-color-black);
   cursor: pointer;
   border-radius: 10px;
 }
@@ -131,8 +148,8 @@ header{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #111;
-  color: #fff;
+  background: var(--bg-color-black);
+  color: var(--text-color-white);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -142,10 +159,10 @@ header{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #fff;
-  color: #111;
+  background: var(--bg-color-white);
+  color: var(--text-color-black);
   text-decoration: none;
-  border: 1.5px solid #111;
+  border: 1.5px solid var(--border-color-black);
   cursor: pointer;
   border-radius: 10px;
 }
@@ -158,11 +175,11 @@ header{
   margin-bottom: 10px;
 }
 footer{
-  background: #111;
-  color: #fff;
+  background: var(--bg-color-black);
+  color: var(--text-color-white);
   text-align: center;
   padding: 15px;
-  box-shadow: 5px 0 25px rgb(46, 30, 30);
+  box-shadow: 5px 0 25px var(--box-sd-color);
 }
 .experience-indent{
   text-indent: 2rem;
