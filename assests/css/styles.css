@@ -99,7 +99,7 @@ header{
   background: var(--bg-color-design1);
 }
 .section{
-  padding: 60px 40px;
+  padding: 40px 40px;
 }
 .bg-light{
   background: var(--bg-color-design2);
@@ -185,5 +185,29 @@ footer{
   text-indent: 2rem;
   list-style: none;
   line-height: 35px;
+}
+#experience h2{
+  margin-bottom: 20px;
+}
+.experience-card{
+  border: 1px solid var(--border-color-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--bg-color-design1);
+}
+.experience-card h4{
+  margin-top: 30px;
+}
+.experience-year{
+  float: right;
+  padding: 7px;
+  color: var(--text-color-white);
+  background: var(--bg-color-black);
+  border: 1px solid var(--border-color-black);
+  border-radius: 10px;
+}
+@media (max-width: 768px){
+  .experience-indent li{
   text-wrap: wrap;
+}
 }
